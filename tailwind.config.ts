@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -69,26 +70,53 @@ export default {
 				sm: 'calc(var(--radius) - 4px)'
 			},
 			keyframes: {
-				'accordion-down': {
-					from: {
-						height: '0'
-					},
-					to: {
-						height: 'var(--radix-accordion-content-height)'
-					}
+				"accordion-down": {
+					from: { height: "0" },
+					to: { height: "var(--radix-accordion-content-height)" }
 				},
-				'accordion-up': {
-					from: {
-						height: 'var(--radix-accordion-content-height)'
-					},
-					to: {
-						height: '0'
-					}
+				"accordion-up": {
+					from: { height: "var(--radix-accordion-content-height)" },
+					to: { height: "0" }
+				},
+				"bounce-slow": {
+					"0%, 100%": { transform: "translateY(0)" },
+					"50%": { transform: "translateY(-20px)" }
+				},
+				"float": {
+					"0%, 100%": { transform: "translateY(0)" },
+					"50%": { transform: "translateY(-10px)" }
+				},
+				"shimmer": {
+					"0%": { backgroundPosition: "-40rem 0" },
+					"100%": { backgroundPosition: "40rem 0" }
+				},
+				"spin-slow": {
+					"0%": { transform: "rotate(0deg)" },
+					"100%": { transform: "rotate(360deg)" }
+				},
+				"confetti-fall": {
+					"0%": { transform: "translateY(-100vh) rotate(0deg)", opacity: "1" },
+					"100%": { transform: "translateY(100vh) rotate(720deg)", opacity: "0" }
+				},
+				"pulse-scale": {
+					"0%, 100%": { transform: "scale(1)" },
+					"50%": { transform: "scale(1.05)" }
+				},
+				"float-horizontal": {
+					"0%, 100%": { transform: "translateX(0)" },
+					"50%": { transform: "translateX(20px)" }
 				}
 			},
 			animation: {
-				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				"accordion-down": "accordion-down 0.2s ease-out",
+				"accordion-up": "accordion-up 0.2s ease-out",
+				"bounce-slow": "bounce-slow 3s infinite ease-in-out",
+				"float": "float 6s infinite ease-in-out",
+				"shimmer": "shimmer 3s infinite linear",
+				"spin-slow": "spin-slow 8s infinite linear",
+				"confetti-fall": "confetti-fall 4s forwards",
+				"pulse-scale": "pulse-scale 2s infinite ease-in-out",
+				"float-horizontal": "float-horizontal 8s infinite ease-in-out"
 			}
 		}
 	},
