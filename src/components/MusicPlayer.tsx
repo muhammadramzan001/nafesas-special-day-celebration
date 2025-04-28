@@ -17,7 +17,6 @@ const MusicPlayer = () => {
     <div className="fixed bottom-4 right-4 z-50">
       <audio
         ref={audioRef}
-        autoPlay
         loop
         src="/happy-birthday.mp3"
       />
