@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Heart, Cake, GiftIcon, Star, BalloonIcon, PartyPopper } from 'lucide-react';
+import { Heart, Cake, GiftIcon, Star, PartyPopper, Music, Gift, Crown } from 'lucide-react';
 
 const Stickers = () => {
   // Create multiple stickers with different positions and animations
@@ -45,15 +45,15 @@ const Stickers = () => {
       animation: "animate-spin-slow", 
       size: "w-6 h-6"
     },
-    // Balloons
+    // Music Notes (replacing Balloons)
     { 
-      element: <BalloonIcon className="text-blue-500 fill-blue-300" />, 
+      element: <Music className="text-blue-500 fill-blue-300" />, 
       position: "top-1/4 right-1/6", 
       animation: "animate-float", 
       size: "w-10 h-10"
     },
     { 
-      element: <BalloonIcon className="text-pink-500 fill-pink-300" />, 
+      element: <Gift className="text-pink-500 fill-pink-300" />, 
       position: "bottom-1/4 left-1/6", 
       animation: "animate-float-horizontal", 
       size: "w-12 h-12"
@@ -66,7 +66,7 @@ const Stickers = () => {
       size: "w-12 h-12"
     },
     { 
-      element: <PartyPopper className="text-green-500 fill-green-300" />, 
+      element: <Crown className="text-green-500 fill-green-300" />, 
       position: "bottom-10 right-10", 
       animation: "animate-pulse-scale", 
       size: "w-10 h-10"
