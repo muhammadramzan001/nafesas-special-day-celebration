@@ -6,6 +6,7 @@ import LoveMessage from '../components/LoveMessage';
 import GiftBox from '../components/GiftBox';
 import Confetti from '../components/Confetti';
 import Stickers from '../components/Stickers';
+import MusicPlayer from '../components/MusicPlayer';
 
 const Index = () => {
   return (
@@ -16,6 +17,7 @@ const Index = () => {
       {/* Animated Background Elements */}
       <Confetti />
       <Stickers />
+      <MusicPlayer />
       
       {/* Content Container */}
       <div className="max-w-4xl w-full mx-auto py-8 px-4 flex flex-col items-center">
